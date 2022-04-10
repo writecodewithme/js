@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<style>
+    * {
+
+        background-color: rgba(117, 7, 129, 0.044);
+    }
+
+    div {
+        text-align: center;
+        /* width: 100%; */
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-left: 600PX;
+        display: table;
+        padding: 3px;
+        color: brown;
+
+    }
+
+    h1 {
+        font-family: cursive;
+        color: blue;
+        border: 2px solid brown;
+        width: justify;
+        text-align: center;
+
+    }
+
+    .xyz {
+
+        margin-left: 5px;
+        background-color: aqua;
+    }
+
+    .abc {
+        margin-left: 120px;
+        background-color: blueviolet;
+    }
+</style>
+
+<body>
+    <h1>Registration form</h1>
+    <form action="/my pic/" method="post">
+        <fieldset>
+            <legend align="center"><b>Details</b></legend>
+            <div>
+                <label for="Firstname">Firstname:</label>
+                <input type="text" id="Firstname" placeholder="Firstname" title="firstname" max lenght="15"
+                    tabindex="1">
+            </div><br>
+            <div>
+                <label for="Lastname">Lastname:</label>
+                <input type="text" id="Lastname" placeholder="Lastname" tabindex="2">
+            </div><br>
+            <div>
+                <label for="Nickname">Nickname:</label>
+                <input type="text" id="Nickname" tabindex="3" disabled>
+            </div><br>
+            <div>
+                <label for="Email">Email:</label>
+                <input type="email" id="Email" required placeholder=xyz@gmail.com autocomplete="">
+            </div><br>
+            <div>
+                <label for="Password">Password:</label>
+                <input type="password" id="Password" required autocomplete="">
+            </div><br>
+            <div>
+                <label for="Dateofbirth">Date of Birth</label>
+                <input type="date" id="Dateofbirth">
+            </div><br>
+            <div>
+                <label>gender: </label>
+                <input type="radio" name="gender" id="male" checked>
+                <label for="male">Male</label>
+
+                <input type="radio" name="gender" id="female">
+                <label for="female">Female</label>
+
+                <input type="radio" name="gender" id="others">
+                <label for="others">Others</label>
+
+            </div><br>
+            <div>
+                <label for="Contact Number">Contact no</label>
+                <input type="tel" maxlength="12" id="Contact Number">
+                <br><br>
+
+            </div>
+            <div class="add">
+                <label for="Address line-1">Address line 1</label>
+                <input type="address-line-1" autocomplete="">
+            </div><br>
+            <div>
+                <label for="address-line-2">Address line 2</label>
+                <input type="address-line-2" id="address-lin-2" autocomplete="">
+            </div><br>
+            <div>
+                <label for="country">choose your country:</label>
+                <select name="country">
+                    <option value="india">India</option>
+                    <option value="usa">usa</option>
+                    <option value="Canada">canada</option>
+                    <option value="uk">uk</option>
+                </select>
+            </div><br>
+            <div>
+                <label for="file">attachment: </label>
+                <input type="file" id="file" multiple data-max-size="5">
+            </div><br>
+        </fieldset>
+            <fieldset>
+                <legend align="center"><b>registration</b></legend>
+
+                <div>
+                    <pre>
+    <input type="checkbox"> agree terms & conditions.<a href="#">terms&conditions</a></pre>
+                    <span class="xyz">
+                        <input type="submit" bgcolor="red"></span>
+                    <span class="abc"><input type="reset"></span>
+                    <br>
+                </div>
+            </fieldset>
+    </form>
+
+
+</body>
+
+</html>

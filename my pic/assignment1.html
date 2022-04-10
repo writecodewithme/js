@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+    button{
+        border:rgb(79, 28, 191) solid 3px;
+        color:rgb(2, 29, 17);
+    
+        
+    }
+</style>
+
+<body>
+    <form>
+        <fieldset>
+            <legend align="left" ><b>Contact Details</b></legend>
+            <label for="name"><b>Name:</b></label>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp;
+            <input type="text" id="name" required><br><br>
+            <label for="tel"><b>Telephone:</b></label>&nbsp&nbsp&nbsp&nbsp;
+            <input type="tel" maxlength="12" id="tel"><br><br>
+            <label for="email"><b>Email:</b></label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+            <input type="email" required placeholder="abc@gmail.com" autocomplete="">
+        </fieldset>
+        <fieldset>
+            <legend><B>Personal Information</B></legend>
+            <label
+                for="age"><b>Age:</b></label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+            <input type="number" max="50" step="5" required><br><br>
+            <label for="gen"><b>Gender:</b></label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+            <select>
+                <option value="female">Female</option>
+                <option value="Male">Male</option>
+                <option value="Others">Others</option>
+            </select><br><br>
+            
+            <label for="textarea" class="textarealabel"><b>when did you<br> wanted to be a<br> zoo keeper?&nbsp&nbsp&nbsp&nbsp&nbsp</b></label>
+                <!-- <b>
+                    when did you<br>
+                    first know you<br>
+                    wanted to be a<br>
+                 <!-- zoo keeper?</b> -->
+            <textarea id="textarea" class="box" rows="4" cols="23"></textarea>
+            
+
+        </fieldset>
+        <fieldset>
+            <legend><b>Pick your fav animal</b></legend>
+            <input type="checkbox" id="dog">
+            <label for="dog" font="sans-seriff">Dog</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+            <input type="checkbox" id="cat">
+            <label for="cat" >cat</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+            <input type="checkbox" id="cow">
+            <label for="cow" >cow</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+            <input type="checkbox" id="lion">
+            <label for="lion" >lion</label><br><br>
+            <input type="checkbox" id="elephant">
+            <label for="elephant" font="sans-seriff">elephant</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+            <input type="checkbox" id="panda">
+            <label for="panda">panda</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+            <input type="checkbox" id="bear">
+            <label for="bear">bear</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+            <input type="checkbox" id="deer">
+            <label for="deer">deer</label>
+
+    
+        </fieldset>
+        <br>
+
+        <button>submit form</button>
+
+    </form>
+
+
