@@ -1,0 +1,88 @@
+*{
+    MARGIN:0;
+    padding:0;
+    box-sizing: border-box;
+    /* background-color: rgba(0, 0, 255, 0.089); */
+}
+body{
+    background-color: rgba(0, 0, 255, 0.063);
+}
+div{
+    width:50vw;
+    height:30vw;
+    border:1px solid white;
+    margin: 10% auto 0 auto;
+    background-color: white;
+    border-radius: 5px;
+
+    
+}
+div ul{
+    border-bottom: 1px solid gary;
+}
+
+.li li {
+    display:inline-block;
+    
+    
+}
+ h2{
+     margin-right: 33vw;
+     margin-left:1vw;
+     margin-top:1vw;
+     margin-bottom:2vw;
+
+}
+hr{
+    background-color: rgba(61, 58, 58, 0.093);
+    
+}
+ #s1{
+    border:0px solid red;
+    width:13vw;
+    padding:2%;
+    text-decoration: none;
+    margin:0 8vw 0 4vw;
+    display: inline-block;
+}
+section ul li{
+    line-height: 30px;
+}
+section ul li::marker{
+    color:transparent;
+}
+#p::before{
+    content:"";
+}
+section{
+    display: inline-block;
+    margin-top:2vw;
+    padding:1vw;
+    margin-bottom: 2vw;
+}
+input{
+    border:1px solid gainsboro;
+    width:20vw;
+    height:2vw;
+    margin:2px;
+    border-radius: 3px;
+}
+button{
+    width:20vw;
+    height:3vw;
+    border-radius: 5px;
+    background-color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    color:white;
+    border:1px solid blue
+}
+h1{
+    font-size: 40px;
+    padding:1px;
+    margin-bottom: 5px;
+}
+legends{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2px;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signin page</title>
+    <style>
+        a{
+            text-decoration: none;
+        }a:hover{
+            color: orange;
+            text-decoration: underline;
+        }
+        input:focus{
+            outline: 1px solid orange;
+            
+        }
+        label{
+            margin-left:-10%;
+            line-height: 5px;
+        }
+        input{
+            width:250px;
+            line-height: 19px;
+        }
+        button{
+            background-color: orange;
+            width:256px;
+        }
+        button:hover{
+            background-color: o;
+        }
+        div{
+            border:1px solid gray;
+            margin-left: 39%;
+            margin-right: 39%;
+            margin-top: 0px;
+            border-radius: 5px;
+        }
+        h1{
+            font-weight: 400;
+    font-size: 28px;
+    line-height: 1.2;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    margin-left: -50%;
+    
+        }
+        
+        input:required{
+            outline: orange;
+            opacity: 20;
+            color: brown;
+        }
+        img{
+            margin-left:670px;
+            margin-bottom: 10px;
+        }
+        span::after{
+            content:"";
+            border-right: 1px solid gray;
+        }
+        p{
+            margin-left:8px;
+            font-size:10px;
+            font-size: 13px!important;
+    line-height: 1.5!important;
+}
+    
+        summary{
+            margin-left :-160px !important;
+        }
+        
+        input:focus{
+            border:1px solid orange;
+            border-radius: 3px;
+            box-shadow: -1px -2px 7px 2px rgba(218, 125, 4, 0.919);
+            box-shadow: 1px 2px 7px 2px rgba(218, 125, 4, 0.919);;
+        }
+        h6{
+            display: inline-block;
+            margin-left:calc(39%);
+            font-family: Arial, Helvetica, sans-serif
+        }
+       
+        h6::after, h6::before
+        {
+            content: "-----------------------------------";
+            color: gainsboro;
+            
+        }
+        #btn{
+            margin-left: 39%;
+            margin-right: auto;
+            background-color: rgba(128, 128, 128, 0.193);
+            padding: 7px;
+            border-radius: 5px;
+            width:345px;
+            border: 1px solid rgb(135, 131, 131);
+        }
+        #btn:hover
+    {
+     background-color: rgba(128, 128, 128, 0.415);
+    }
+    details p{
+        margin-left: 0%;
+    }
+    #btn1{
+        background-color: rgba(255, 166, 0, 0.616);
+        border-radius: 2px;
+        padding: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.337);
+    }
+    #btn1:hover{
+        background-color: rgba(227, 153, 17, 0.545);
+        
+    }
+        
+    </style>
+</head>
+<body>
+    <form>
+        <img src="amazon-png-logo-vector-1.png" alt="" width="200px" align="center">
+        <div align="center">
+            <h1>Sign-in</h1>
+            <label for="email" ><b>E-mail or mobile phone number</b></label><br><br>
+            <input type="email" id="email" required><br><br>
+            <button id="btn1">Continue</button><br>
+            <p>By continuing, you agree to Amazon's <a href="#">Conditions <br>of Use</a> and <a href="#">Privacy Notice.</a></p>
+            <details>
+            <summary><a href="#">Need help?</a></summary>
+                <p><a href="#">Forgort password</a></p>
+                <p><a href="#">Other issues with Sign-In</a></p>
+            </details>
+        
+        
+        </div>
+        <h6 align="center" class="hr">new to amazon?</h6><br>
+        <button id="btn">Create your amazon account</button>
+
+    </form>
+</body>
+</html>

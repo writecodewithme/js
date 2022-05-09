@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body :only-child{
+            background-color: aqua;
+        }
+        [title ="pARa" i]{
+            COLOR:red;
+
+        }
+        [class="abc" i]{
+            background-color: aquamarine;
+        }
+        a:link{
+         /* text-decoration: none; */
+        }
+        a:visited{
+            
+            color:rgb(199, 105, 16);
+            
+        }
+        a:active{
+            background-color: brown;
+        }
+        button:hover{
+            background-color: blue;
+            text-shadow: 12px 13px 0 blue;
+        }
+        li:focus{
+            border: 5px solid green;
+
+        }
+        h3:root{
+            /* background-color: bisque; */
+            --orange-red:rgb(217, 38, 11);
+            color:blueviolet;
+
+        }
+        li{
+            color:var(--orange-red);
+            text-shadow: -1px -2px 2 var(--orange-red);
+        }
+        *:empty{
+            background-color: rgba(3, 49, 32, 0.67);
+            height:16vh;
+            width:55vw;
+        }
+        div :first-child{
+         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;        }
+         body :first-child{
+            background-color: rgb(145, 18, 18);
+
+         }
+         button{
+             width:200px;
+             border: 2px solid pink;
+             background:-webkit-linear-gradient(to right, #12c2e9, #c471ed, #f64f59) ;
+            
+         }
+          p + div :nth-child(5){
+             border:2px solid rgb(213, 18, 213);
+         }
+    </style>
+</head>
+<body>
+    <h4>hhhh</h4>
+    <input></input><br>
+    <button>btn1</button>
+    <button>btn2</button>
+    <p title="pAra">p1</p>
+    <p title="para">p2</p>
+    <p title="pARa">p3</p>
+    <p>p4</p>
+    <div><p>hello children</p></div>
+    <p>p5</p>
+    <div>
+        <h3 class="ABC">h1</h3>
+        <h3 CLASS="abc" >h2</h3>
+        <p class="ABc">p1</p>
+    </div>
+    <span>
+        <ul>
+        <li><a href="#">google</a></li>
+        <li contenteditable="true">list2</li>
+        </ul>
+
+    </span>
+    <ol>
+        <li>scooter</li>
+        <li>cycle</li>
+        <li>skateboard</li>
+
+    </ol>
+</body>
+</html>

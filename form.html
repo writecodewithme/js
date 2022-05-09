@@ -12,7 +12,27 @@
 
         background-color: rgba(117, 7, 129, 0.044);
     }
+   [type]
+   {
+color:rgb(4, 53, 60);
+background-color: aqua;
 
+   }
+   input:focus{
+       color:red;
+   }
+   input:active{
+       color:orange;
+   }
+   input:visited
+   {
+       color:rgb(17, 215, 106)
+   }
+.gender{
+    background-color: blanchedalmond;
+}
+
+   
     div {
         text-align: center;
         /* width: 100%; */
@@ -23,6 +43,34 @@
         color: brown;
 
     }
+    div[type="radio"]:focus{
+        background-color: blanchedalmond;
+    }
+    label:root{
+        background-color:black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    h1:hover{
+
+        background-color: #99ddee;
+        color:limegreen;
+        font-family: 'Times New Roman', Times, serif;
+
+    }
+    h1:active,h1:hover{
+       font-size:30px;
+
+    }
+    input:checked:hover{
+        
+        color: aqua;
+    }
+
+    input:focus
+    {
+        background-color: blanchedalmond;
+
+    }
 
     h1 {
         font-family: cursive;
@@ -30,7 +78,11 @@
         border: 2px solid brown;
         width: justify;
         text-align: center;
+        
 
+    }
+    select:focus{
+        background-color: blanchedalmond;
     }
 
     .xyz {
@@ -43,10 +95,18 @@
         margin-left: 120px;
         background-color: blueviolet;
     }
+    a:link{
+        border: 20px;
+        background-color: aqua;
+    }
+    a:visited{
+        color:blueviolet
+    }
 </style>
 
 <body>
     <h1>Registration form</h1>
+    <INPUT TYPE=RANG
     <form action="/my pic/" method="post">
         <fieldset>
             <legend align="center"><b>Details</b></legend>
@@ -77,13 +137,13 @@
             </div><br>
             <div>
                 <label>gender: </label>
-                <input type="radio" name="gender" id="male" checked>
+                <input type="radio" name="gender" id="male" class="gender" checked>
                 <label for="male">Male</label>
 
-                <input type="radio" name="gender" id="female">
+                <input type="radio" name="gender" id="female" class="gender">
                 <label for="female">Female</label>
 
-                <input type="radio" name="gender" id="others">
+                <input type="radio" name="gender" id="others" class="gender">
                 <label for="others">Others</label>
 
             </div><br>
@@ -95,11 +155,11 @@
             </div>
             <div class="add">
                 <label for="Address line-1">Address line 1</label>
-                <input type="address-line-1" autocomplete="">
+                <input type="address-line-1" id="Address line-1" autocomplete="">
             </div><br>
             <div>
                 <label for="address-line-2">Address line 2</label>
-                <input type="address-line-2" id="address-lin-2" autocomplete="">
+                <input type="address-line-2" id="address-line-2" autocomplete="">
             </div><br>
             <div>
                 <label for="country">choose your country:</label>

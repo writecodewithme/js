@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <STYLE>
+        body{
+            background-color: rgb(92, 20, 209);
+        }
+   div{
+       width:200px;
+       height:200px;
+       border:1px dotted red;
+       background:rgb(215, 56, 11);
+       border-radius: 50%;
+       display: inline-block;
+       margin:30px;
+       transition: 6s;
+       
+   }
+   nav{
+       width:100%;
+       height:0%;
+       font-weight: 500;
+       color: blue;
+       background-color: aquamarine;
+       display:inline-block;
+       
+   }
+   li{
+       display: inline;
+       margin: 20px;
+       float: right;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       /* border:1px solid rgb(48, 79, 3); */
+       text-decoration: none;
+       padding: 0px 20px;
+       
+       
+   }
+   a{
+       text-decoration: none;
+   }
+   li::marker{
+       visibility: hidden;
+   }
+    li:hover{
+        border: 2px ;
+        
+        background-color: blueviolet;
+        transition-duration: 10sec;
+    }
+    div:hover{
+        background-color: aqua;
+    }
+    /* img{ */
+        /* border: 1px solid grey; */
+        /* border-radius: 50%; */
+        
+    /* } */
+    img{
+        visibility: hidden;
+    }
+    #d2{
+        border-radius: 50% 0px 50% 0px;
+        border-bottom: 50%;
+    }
+    #d2:hover{
+        background-color: aqua;
+        transform: rotate(1turn);
+    }
+    #d1{
+        border-radius: 100% 50% 100% 25%;
+    }
+    div:nth-of-type(3):hover
+    {
+        border-radius: 100% 0 0 100%;
+        transform: rotate(-3turn);
+    }
+    div:nth-of-type(5):hover
+    {
+        border-radius: 90% 10% 50% 1%;
+        transform: rotate(1turn);
+        z-index: 405;
+        margin:0px 0 0 -200px;
+
+    }
+    #d5{
+        width:50px;
+        height:50px;
+        border-radius: 50%;
+        z-index: 5;
+        background-color: yellow;
+        display: inline-block;
+    }
+    #d6{
+        width:50px;
+        height:50px;
+        border-radius: 50%;
+        z-index: 5;
+        background-color: yellow;
+        margin-left:100px;
+        margin-bottom:200px;
+        display: inline-block;
+
+    }
+
+    </STYLE>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#audio">roar</a></li>
+            <li><a href="#">about</a></li>
+            <li> <a href="#">contact</a></li>
+        </ul>
+    </nav>
+    <div id="d1">
+        <!-- <img src="aaradhya.jpg" width="50px"> -->
+    </div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+    <div ></div>
+    <div>
+        
+    </div>
+    <div><div id="d5"><hr><div id="d6"></div></div></div>
+    <div>
+    <audio controls id="audio">
+        <source src="mixkit-wild-lion-animal-roar-6.wav" width="400px">
+    </audio>
+    </div>
+</body>
+</html>
