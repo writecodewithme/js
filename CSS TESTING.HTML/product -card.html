@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: linear-gradient( 20deg , azure 40%, rgba(128, 0, 128, 0.351) 60% ,rgba(17, 225, 100, 0.87)  71% ,transparent);
+            /* background-repeat: repeat; */
+            /* background-size:1% 1% ; */
+            user-select: none;
+            
+        }
+        .container{
+            /* background-image: repeating-conic-gradient(  azure 0 10%, rgba(128, 0, 128, 0.095) 20% 50% ,rgba(17, 225, 100, 0.87) 50% 59%); */
+            /* background-repeat: repeat;
+            background-size:1% 1% ; */
+            width:100vw;
+            height:100vh;
+        
+        }
+        main{
+            display:flex;
+            justify-content: space-evenly;
+            align-items:center;
+            flex-wrap:wrap;
+            
+        
+        }
+        .product-1 ,.product-2,.product-3{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width:15rem;
+
+            
+            width:15vw;
+            
+            background-color: white;
+            padding:3vw;
+            border-radius: 30px;
+            background-image:LINEAR-gradient( rgba(0, 128, 0, 0.052),rgba(148, 148, 17, 0.223),gray) ;
+            margin-top:3vw;
+            BORDER:1px inset rgb(22, 24, 22);
+
+    
+        }
+        div:not(.container):hover{
+            /* background-image:radial-gradient(rgba(7, 246, 7, 0.079),rgba(239, 239, 8, 0.995),rgba(0, 255, 0, 0.126),WHITE) ; */
+            box-shadow: -5px 2px 5px 2px rgba(2, 41, 2, 0.152) inset ;
+        }
+        img{
+            display: block;
+            width:12.5rem;
+            height: auto;
+            /* margin-left:10%; */
+            filter: drop-shadow(-10px -5px 5px black);
+            
+        }
+        img:hover{
+            filter: drop-shadow(0px -5px 10px black);
+            transition: 2s;
+            
+        }
+        h1,p{
+            text-align: center;
+            margin:auto;
+            /* margin-top:2%; */
+            margin-bottom: 8%;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 900;
+            COLOR:BROWN;
+            -webkit-text-stroke: 1px black;
+        }
+        .price{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 800;
+            font-size: 30px;
+            color:rgb(228, 67, 13);
+            letter-spacing: 3px;
+        }
+        button{
+            margin-left:auto;
+            margin-right: auto;
+            width:100%;
+            padding: 4%;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+            font-size: 20px;
+            background-image:linear-gradient(white 10% ,rgba(218, 165, 32, 0.681) 80%,white);
+            border-radius: 5px;
+            border: 1px solid yellow;
+        }
+        button:hover{
+            background-image: linear-gradient(rgba(14, 14, 233, 0.959) ,rgba(0, 255, 0, 0.126));
+            
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+        }
+        a:hover{
+            color:  rgba(146, 25, 198, 0.9);
+            font-size:1rem;
+        }
+        @media screen and (max-width:500px){
+                   body{
+                       background-color: black;
+                       background-image: none;
+                        
+                   }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <main>
+            <div class="product-1">
+                <img src="R.png" class="image" >
+                <h1>GUCCI</h1>
+                <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt consequuntur ratione hic.</p>
+                <p class="price">$100</p>
+                <button><a href="#">Buy Now</a></button>              </div>
+            <div class="product-2">
+                <img src="w-2.png" class="image" >
+                <h1>GUESS</h1>
+                <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt consequuntur ratione hic.</p>
+                <p class="price">$100</p>
+                <button><a href="#">Buy Now</a></button>             </div>
+            <div class="product-3">
+                <img src="w3.png" class="image" >
+                <h1>GUCCI</h1>
+                <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt consequuntur ratione hic.</p>
+                <p class="price">$100</p>
+                <button><a href="#">Buy Now</a></button> 
+            </div>
+        </main>
+    </div>
+</body>
+</html>

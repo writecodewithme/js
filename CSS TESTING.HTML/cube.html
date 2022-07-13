@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1200px;
+    perspective-origin: 0px -100px;
+    filter: drop-shadow(0px 40px 10px #000);
+}
+
+.cube {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 10s;
+}
+
+.cube:hover {
+    transform: rotateX(360deg) rotateY(720deg);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    clip-path: circle(50%);
+}
+
+img:nth-child(1) {
+    transform: rotateY(90deg) translateZ(150px);
+}
+
+img:nth-child(2) {
+    transform: rotateY(180deg) translateZ(150px);
+}
+
+img:nth-child(3) {
+    transform: rotateY(270deg) translateZ(150px);
+}
+
+img:nth-child(4) {
+    transform: rotateY(360deg) translateZ(150px);
+}
+
+img:nth-child(5) {
+    transform: rotateX(90deg) translateZ(150px);
+}
+
+img:nth-child(6) {
+    transform: rotateX(270deg) translateZ(150px);
+}
+</style>
+<body>
+    <div class="container">
+        <div class="cube">
+          <img src="20190724_143500.jpg" alt="" />
+          <img src="DSC_0078.JPG" alt="" />
+          <img src="DSC_0173.JPG" alt="" />
+          <img src="DSC_0390.JPG" alt="" />
+          <img src="DSC_0474.JPG" alt="" />
+          <img src="DSC_0390.JPG" alt="" />
+        </div>
+      </div>
+    
+</body>
+</html>

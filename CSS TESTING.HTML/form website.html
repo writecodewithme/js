@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: 'Lato', sans-serif;
+                        color:black;
+                        background-color: black;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+        
+        .bg-video{
+            position: absolute;
+            top:0;
+            left:0;
+            /* z-index: -10; */
+            width:100%;
+            height: auto;
+
+        }
+        .navbar{
+            position: relative;
+            background-color: aliceblue;
+        }
+        .container{
+            width:90%;
+            height:100%;
+            /* background-color:white; */
+            /* background-image:url("https://imas.unsplash.com/photo-1639772823849-6efbd173043c?ixlib=rb-1.21&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"); */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: left;
+            display:flex;
+            justify-content: space-evenly ;
+            align-items: center;
+            position: relative;
+            vertical-align: middle;
+            margin-top: 10%;
+            
+            
+
+        }
+        .headline{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            flex-direction: column;
+            position: relative;
+            width:700px;
+            padding-right: 200px;
+            font-weight: 900;
+            text-align: justify;
+            color:red;
+        }
+        .headline h2{
+            position: absolute;
+            top:-200px;
+            left:0;
+             font-size: 100px;
+       }
+       .headline h1{
+        align-self: center;
+        margin:20px;
+        color:red;
+       }
+       .headline p{
+        color:crimson;
+        font-size: larger;
+       }
+
+        form{
+            
+            border:10px solid gray;
+             /* background-color:rgba(14, 224, 80, 0.579); */
+            -webkit-backdrop-filter: blur(50%);
+            backdrop-filter: blur(100%); 
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items:space-between;
+            width:25rem;
+            height:30rem;
+            border-radius: 20px;
+            padding: 20px;
+            margin:10px;
+            position: relative;
+            box-shadow: 20px 20px 10px white;
+           
+        }
+        .form-class{
+           background-color: transparent;
+           border:1px solid rgb(39, 39, 48);
+           border-radius: 10px;
+           height:2rem;
+           padding: 4px;
+           font-size: 20px;
+           /* text-align: center; */
+           color:coral;
+           position: relative;
+           
+           
+        }
+        form ::placeholder{
+       text-align: center; 
+            color:gray;
+            opacity: 0.7;
+            font-size: 20px;
+            position: absolute;
+            top:0px;
+            left:35%;
+            z-index: 10000;
+        }
+        select option:nth-child(2n+1){
+            background-color: blue;
+        }
+        /* option::selection  form::placeholder{
+            background-color: blue;
+            position: absolute;
+            top:0;
+            left:0;
+            font-size: x-large; */
+
+        /* } */
+        input::selection{
+            border:1px dotted black;
+        }
+        #submit{
+            width:10rem;
+            align-self: center;
+            font-style: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: blanchedalmond;
+        }
+        .navbar{
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            background-color: rgba(250, 235, 215, 0.053);
+            flex-wrap: wrap;
+        }
+        ul li{
+            display: inline-block;
+            padding-right:20rem;
+            font-size: 30px;
+            justify-content: center;
+        }
+        ul li a{
+            text-decoration: none;
+        }
+    
+    </style>
+</head>
+<body>
+    <!-- <video autoplay loop playsinline class="bg-video">
+        <source src="pexels-nataliya-vaitkevich-6941855.mp4" width="100%">
+    </video> -->
+    <div class="navbar">
+       
+        <ul>
+            <li><a href="#">How it Works?</a></li>
+            <li> <a href="#">Need Customer Service?</a></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <div class="container">
+   <div class="headline">
+    <h2>HomeLabs</h2>
+    <h1>Blood Test at Home</h1>
+    <p>
+        Get your blood tests while you at home, Our lab technicians will come collect blood samples or perform blood tests at your home or workplace 7 days a week, starting from 7:00 a.m.
+
+        We then get your blood and other samples analyzed by a recognized Lab Test Center in Berhampur. For most samples, results of your blood and other tests will be available on the same day.
+    </p>
+   </div>
+        <form method="get" action="">
+            <h3 align="center">Book Appointment</h3>
+            <input type="text" placeholder="Your name" class="form-class" tabindex="1">
+            <input type="number" placeholder="Your Age" class="form-class" tabindex="2">
+            <!-- <label for="test-type">Type of Blood Test:</label> -->
+            <select name="type of test" id="test-type" placeholder="select" class="form-class">
+                <option>--Choose Your Test Type--</option>
+
+                <option>Thyroid Stimulating Hormone Test (TSH)</option>
+                <option>Lipid Panel</option>
+                <option>Enzyme Markers</option>
+                <option>DHEA-sulfate Serum Test</option>
+                <option>C-reactive Protein (CRP) Test</option>
+                <option>Comprehensive Metabolic Panel (CMP)</option>
+                <option>Complete Blood Count (CBC)</option>
+                <option>Coagulation Panel</option>
+                <option>Blood Glucose Test</option>
+                <option>Basic Metabolic Panel (BMP)</option>
+                
+            </select>
+            <input type="tel" placeholder="phone no." class="form-class">
+            <input type="text" placeholder="street name" class="form-class">
+            <input type="text" placeholder="city" value="berhampur" class="form-class" disabled>
+            <input type="tel" placeholder="zipcode" class="form-class" maxlength="6">
+            <button type="submit" class="form-class" id="submit">Book Now</button>
+
+            
+        </form>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    background-color: rgb(40, 37, 37);
+
+}
+.box{
+    position:relative;
+   transform-style:preserve-3d;
+   display:flex;
+   justify-content: center;
+   align-items:center;
+   perspective-origin: 500px;
+    perspective: 2000px;
+    background-color: black;
+    /* transform: translateZ(100px); */
+   
+
+
+}
+.cube3d{
+    width:20rem;
+    height:20rem;
+    /* background-color:rgba(37, 22, 211, 0.91); */
+    /* border:1px solid white; */
+    position:absolute;
+    top:200px;
+    /* background-image: linear-gradient(blue,yellow,red); */
+    /* box-shadow: 3px 3px 50px rgb(23, 207, 93) inset; */
+    /* transition: 5s; */
+    text-align: justify;
+   overflow:hidden;
+    /* white-space:wrap;*/
+   line-height: 15px;
+    color:rgba(240, 238, 243, 0);
+    background-color: WHITE;
+    /* backface-visibility: hidden; */
+    TEXT-SHADOW:1PX 1PX  BLACK;
+
+}
+#shadow{
+    width:10rem;
+    height:10rem;
+    border:1px solid white;
+    /* background-color: aquamarine; */
+    filter: blur(50px);
+    transform: rotatex(90deg);
+    /* box-shadow: 20px 20px 30px greenyellow; */
+    position: absolute;
+    top:300px;
+    
+
+}
+#front{
+transform:  rotatex(0deg) translatez(-10rem);
+}
+#back{
+    transform: rotatex(0deg) translateZ(10rem)  ;
+  
+}
+#top{
+    transform: rotatex(90deg) translateZ(10rem);
+
+}
+#bottom{
+    transform: rotatex(90deg) translateZ(-10rem);
+
+}
+#left{
+    transform: rotatey(90deg)translateZ(10rem)  ;
+
+}
+#right{
+    transform: rotatey(90deg) translateZ(-10rem) ;
+
+
+
+}
+/* #text{
+    color:transparent;
+    position: absolute;
+    top:100px;
+    width:300px;
+    transform:translatez(300px) translatex(-80px);
+   -webkit-background-clip:text;
+
+
+} */
+.box:hover{
+    transform: rotatey(180deg)  ;
+    transition:all 10s 2s ease; 
+    /* animation: animatebox 7s 3s 1; */
+    /* transform: rotatex(90deg) translateZ(5rem) rotateX(120deg) translateZ(5rem) translateY(7.8rem) translateX(0.36rem); */
+
+}
+/* @keyframes animatebox {
+    from{
+ transform:rotatex(90deg) translateZ(5rem);
+    }
+    
+    to{
+        transform:translatez(-5rem) rotateX(180deg) translateX(-0.15rem) ;         
+     transform-origin: top  ;
+        animation-iteration-count: 1; */
+    }
+}

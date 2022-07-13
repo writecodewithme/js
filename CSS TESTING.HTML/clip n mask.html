@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main:not(h1){
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        div{
+            width:300px;height:300px;
+            border:3px solid black;
+        
+        }
+        .d1{
+            background-image: url("https://iheartdogs.com/wp-content/uploads/2018/01/dog-3049615_640.jpg");
+            background-size: 300px 300px;
+            background-repeat: no-repeat;
+            clip-path: circle(50%);
+            mask-image: url(R.png);
+            mask-size:cover;
+        }
+        .d2{
+            background-image: url("https://th.bing.com/th/id/OIP.1klnCKVWAs3V9Mc1FlRVDAHaGm?w=211&h=188&c=7&r=0&o=5&dpr=2.45&pid=1.7");
+            background-size: 300px 300px;
+            background-repeat: no-repeat;
+            clip-path: ellipse(150px 150px at center);
+        }
+        .d3{
+            background-image: url("https://www.bing.com/th?id=OIP.gmBKxjOgeHyX6oud_plXBQHaGX&w=269&h=231&c=8&rs=1&qlt=90&o=6&dpr=2.45&pid=3.1&rm=2");
+            background-size: 300px 300px;
+            background-repeat: no-repeat;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        }
+        h1{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="d1">
+            
+        </div>
+        <h1>i am a dog</h1>
+        <div class="d2">
+            
+        </div>
+        <h1>i am an elephant</h1>
+        <div class="d3">
+            
+        </div>
+        <h1>i am a cat</h1>
+    </main>
+</body>
+</html>
